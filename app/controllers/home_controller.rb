@@ -2,6 +2,6 @@ class HomeController < ApplicationController
   
   def index
     puts 'Hello World'
-    @Hello = 'Hello'
+    @Hello = 'Hello Rubist'
   end
 end
