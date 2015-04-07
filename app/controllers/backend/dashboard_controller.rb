@@ -1,7 +1,6 @@
-class Backend::DashboardController < ApplicationController
-  
-  before_action :authenticate_user!
+class Backend::DashboardController < Backend::BaseController
   
   def index
+    authorize! :manage, :all
   end
 end
